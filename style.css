@@ -1,0 +1,343 @@
+/* write your styles here */
+@font-face {
+	src: url('Fonts/JosefinSans-Regular.ttf');
+	font-family: 'JSR';
+}
+
+@font-face {
+	src: url('Fonts/JosefinSans-Bold.ttf');
+	font-family: 'JSB';
+}
+
+@font-face {
+	src: url('Fonts/Montserrat-Bold.ttf');
+	font-family: 'MB';
+}
+
+@font-face {
+	src: url('Fonts/Montserrat-Regular.ttf');
+	font-family: 'MR';
+}
+
+@font-face {
+	src: url('Fonts/Sofia-Regular.ttf');
+	font-family: 'SR';
+}
+
+@font-face {
+	src: url('Fonts/Montserrat-ExtraBold.ttf');
+	font-family: 'MEB';
+}
+
+body {
+	margin: 0;
+}
+
+marquee {
+	background: #ed484c;
+	width: 100%;
+	margin: 0;
+	padding: 10px 0;
+}
+
+marquee p{
+	color: #fffefe;
+	margin: 0;
+	font-size: 15px;
+	font-family: MB;
+	text-align: right;
+}
+
+marquee .mark {
+	background: #fdf733;
+	color: #000000;
+	font-weight: bolder;
+	padding: 0 10px;
+	font-family: MEB;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.nav{
+	width: 100%;
+	opacity: 0.9;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background: #4c4c4c;
+	padding: 13px 0;
+	
+}
+
+.nav .logo img{
+	height: 50px;
+	width: 90px;
+	margin-left: 30px;
+}
+
+.nav nav ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.nav nav ul li a{
+	text-decoration: none;
+	color: #cacaca;
+	font-family: MR;
+	font-size: 18px;
+	font-weight: bolder;
+	margin: 0 20px;
+}
+
+#banner {
+	background-image: url('images/floral.png');
+	background-color: #f18d97;
+	padding: 70px 0;
+	width: 100%;
+}
+
+#banner .container {
+	max-width: 780px;
+	margin: auto;
+	text-align: center;
+}
+
+#banner .head h1{
+	margin: 0;
+	font-family: JSB;
+	font-weight: bolder;
+	font-size: 60px;
+}
+
+#banner .content{
+	margin: 64px 0 50px;
+}
+
+#banner .content p{
+	font-family: MR;
+	font-weight: 700;
+	font-size: 20px;
+	border-top: 1px solid black; 
+	border-bottom: 1px solid black; 
+	padding: 20px 0;
+}
+
+#banner a {
+	text-decoration: none;
+	color: #f18d97;
+	background: #170d0e;
+	font-size: 35px;
+	font-family: MB;
+	padding: 20px 2em;
+}
+
+#our-service {
+	width: 100%;
+	background-color: #efece7;
+	background-image: url('images/floral.png');
+	padding: 30px 0;
+}
+
+#our-service .head h2 {
+	margin: 0;
+	text-align: center;
+	font-family: SR;
+	font-size: 35px;
+}
+
+#our-service .container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+}
+
+#our-service .container figure i{
+	font-size: 150px;
+}
+
+#our-service .container figure i:hover{
+	color: #eb474c;
+	transition: 1s ease all;
+}
+
+#our-service .container figure h3{
+	font-family: MEB;
+	font-weight: bolder;
+}
+
+#our-service .container figure p{
+	font-family: MR;
+	font-weight: bold;
+	margin: 0;
+}
+
+#portfolio {
+	width: 100%;
+	background-image: url('images/floral.png');
+	background-color: #ddceb4;
+	padding: 30px 0;
+}
+
+#portfolio .head {
+	max-width: 682px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	text-align: center;
+}
+
+#portfolio .head h2 {
+	margin: 0;
+	font-family: SR;
+	font-size: 35px;
+}
+
+#portfolio .head p {
+	margin: 20px 0;
+	font-family: MR;
+	font-size: 18px;
+	font-weight: bold;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	padding: 20px 0;
+}
+
+#portfolio .container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#portfolio .container .row{
+	display: flex;
+	flex-direction: row;
+}
+
+#portfolio figure {
+	position: relative;
+}
+
+#portfolio figcaption {
+	position: absolute;
+	top: 0;
+	opacity: 0.9;
+	width: 100%;
+	height: 100%;
+	background: #212121;
+	border-radius: 10px;
+	color: #ffffff;
+	text-align: center;
+	display: none;
+}
+
+#portfolio figcaption h3{
+	font-family: MB;
+	font-size: 20px;
+	margin-top: 60px;
+}
+
+#portfolio figcaption .icons{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#portfolio figcaption .icons i{
+	height: 40px;
+	width: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px;
+}
+
+#portfolio figure:hover figcaption{
+	display: block;
+}
+
+#portfolio figcaption .icons i:hover{
+	background: #ffffff;
+	color: #212121;
+}
+
+#portfolio figure img {
+	width: 220px;
+	height: 220px;
+	border-radius: 10px;
+}
+
+#contact {
+	width: 100%;
+	background-image: url('images/floral.png');
+	background-color: #afc7c6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 0;
+}
+
+#contact .head h2 {
+	font-family: SR;
+	font-size: 35px;
+	margin-top: 0;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+}
+
+.icons a{
+	text-decoration: none;
+	font-size: 45px;
+	height: 80px;
+	width: 80px;
+	border-radius: 100px;
+	border: 1px solid #212121;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #212121;
+	margin: 0 10px;
+}
+
+.icons a:hover {
+	color: #fcdea6;
+	background: #212121;
+	transition: 1s ease all;
+}
+
+footer {
+	width: 100%;
+	background: #212121;
+	text-align: center;
+	padding: 40px 0;
+}
+
+footer p {
+	margin: 0;
+	color: #ffffff;
+	font-family: MR;
+	font-weight: bold;
+}
+
+footer i{
+	margin: 0 10px;
+	font-size: 20px;
+}
+
+footer:hover i{
+	color: #eb474c;
+	transition: 1s ease all;
+}
