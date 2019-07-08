@@ -73,6 +73,13 @@ header {
 	
 }
 
+.nav i {
+	display: none;
+	color: #cacaca;
+	font-size: 30px;
+	margin: 10px 20px;
+}
+
 .nav .logo img{
 	height: 50px;
 	width: 90px;
@@ -340,4 +347,53 @@ footer i{
 footer:hover i{
 	color: #eb474c;
 	transition: 1s ease all;
+}
+
+@media only screen and (max-width: 600px){
+	body {
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	#our-service .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	}
+
+	#portfolio .container .row{
+		display: flex;
+		flex-direction: ;
+	}
+
+}
+
+@media only screen and (max-width: 480px){
+	body {
+		box-sizing: border-box;
+		width: 100%;
+	}
+	
+	#our-service .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	}
+
+	.nav nav{
+		display: none;
+	}
+
+	#portfolio .container .row{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav i {
+		display: block;
+	}
 }
