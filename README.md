@@ -1,3 +1,4 @@
-# Mockups May 14
+# Tech Karo Website
 
-Published At: https://khairunnisa10.github.io/14-May-Mockup/
+Tech Karo website with a combination of different fonts, colors, icons and hovers.
+Published At: https://khairunnisa10.github.io/Tech-Karo/
